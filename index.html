@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+       <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="css/main.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<script src="http://cloud.github.com/downloads/emberjs/ember.js/ember-0.9.6.min.js"></script>
+         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+         	<script src="js/app.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+<script type="text/x-handlebars">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand logo"  href="#">Social Paper</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a id="design" title="design" {{ action "loadList"  target = "App.ListController"}} href="#">Design </a></li>
+                            <li><a id= "Programming" title="Programming" {{ action "loadList" target = "App.ListController"}} href="#">Programming </a> </li>
+                            <li><a id= "Cloud" title="Funny" {{ action "loadList" target = "App.ListController"}} href="#">Cloud </a> </li>
+                            <li><a id= "Magento" title="Magento" {{ action "loadList" target = "App.ListController"}} href="#">Magento </a> </li>
+                            <li><a id= "RoR" title="RoR" {{ action "loadList" target = "App.ListController"}} href="#">RoR </a> </li>
+                            <li><a id= "Neevites" title="Neevites" {{ action "loadList" target = "App.ListController"}} href="#">Neevites </a> </li>
+
+
+
+                            <li><a id= "Bangalore" title="Bangalore" {{ action "loadList" target = "App.ListController"}} href="#">Bangalore </a> </li>
+                            <li><a id= "Pune" title="Pune" {{ action "loadList" target = "App.ListController"}} href="#">Pune </a> </li>
+
+                        </ul>
+
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+          
+        <!--  <h1> in: {{App.List.vinci}}</h1>    Display the selected section -->
+         
+
+
+            <!-- Example row of columns -->
+            <div id ="columns" class="row">
+             {{#each App.tweetsController}}
+                <div class="pin">
+           
+				 <p class= "tweet" >{{{text}}}</p> <!-- Tripple tags to tell Handlebars to render HTML properly   -->
+                <span class="credit">
+                    <img {{bindAttr src="avatar"}} />
+                            <p>{{name}}<br/><span>@{{screen_name}}</span></p> 
+                          <!--  <span>{{date}}</span> -->
+
+                            </span>
+                </div>
+			{{/each}}
+            </div>
+
+            <hr>
+</script>
+            <footer>
+                <center>
+                <p>&copy; Everybody 2012 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Handcrafted by: @Areai51   </p>
+            </center>
+            </footer>
+
+        </div> <!-- /container -->
+
+      
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+.logo{
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #A2CB2C!important;
+}
+.pin {
+
+font-size:12px;
+ -moz-column-break-inside: avoid; 
+	-webkit-column-break-inside: avoid; 
+	column-break-inside: avoid; display: 
+	inline-block; 
+    margin: 0 2px 5px; 
+width:90%;
+	padding: 15px 15px 0;  
+    border: 1px solid #666; 
+	box-shadow: 3px 3px 5px #666; 
+	background: #333; 
+    border-radius: 5px;
+	}
+
+    .pin img{
+        float:right;
+        padding:15px 10px 10px;
+        
+    }
+
+.tweet{
+    font-size:20px;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 25px;
+}
+
+.credit{
+    text-align: right;
+    margin: 20px 5px 5px;
+}
+.credit p{font-size:14px;}
+.credit p span{font-size: 12px}
+
+
+
+
+
+
